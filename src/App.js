@@ -1,11 +1,10 @@
+import Header from "./components/Header";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Flight Booking</h1>
-      </header>
-    </div>
+    <>
+      <Header/>
+    </>
   );
 }
 
