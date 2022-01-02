@@ -1,4 +1,5 @@
 import Logo from '../assets/Abacus-air-logo.png';
+import {FaRegUser} from 'react-icons/fa';
 
 const Menu = () => {
   return (
@@ -26,11 +27,11 @@ const Menu = () => {
         </ul>
       </nav>
       <div className='accountWrap'>
-          <ul>
-              <li>Sign up</li>
-              <span className='divider'>|</span>
-              <li>Login</li>
-          </ul>
+        <ul>
+          <li><FaRegUser className='faIcon'/>Login</li>
+          <span className='divider'>|</span>
+          <li>Sign up</li>
+        </ul>
       </div>
     </div>
   );

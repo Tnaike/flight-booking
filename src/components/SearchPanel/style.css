@@ -1,0 +1,132 @@
+.search-tab-container ul li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  background-color: rgba(35, 43, 56, 0.75);
+  color: #fff;
+  padding: 8px 25px;
+  margin-right: 6px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+.search-tab-container ul li.active-tab {
+  background-color: #d9062f;
+}
+.search-tab-container ul li.active-tab::after {
+  content: '';
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #d9062f;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%) rotate(180deg);
+  -webkit-transform: translate(-50%) rotate(180deg);
+  z-index: 1;
+}
+
+.custom-radio {
+  position: relative;
+  display: inline-block;
+  padding: 0 1.5rem;
+  vertical-align: middle;
+}
+.custom-control-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1.25rem;
+  height: 1.375rem;
+  opacity: 0;
+}
+.custom-control-label {
+  position: relative;
+  vertical-align: top;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.custom-control-label::before {
+  content: '';
+  position: absolute;
+  top: 0.125rem;
+  left: -1.5rem;
+  display: block;
+  background-color: transparent;
+  width: 0.6rem;
+  height: 0.6rem;
+  pointer-events: none;
+  border: 3px solid #d9062f;
+  border-radius: 50%;
+}
+.custom-control-label::after {
+  content: '';
+  position: absolute;
+  top: 0.125rem;
+  left: -1.5rem;
+  display: block;
+  background: no-repeat 50%/50% 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  top: 0.36rem;
+  left: -1.24rem;
+  height: 0.46rem;
+  width: 0.46rem;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.input-group,
+.submitWrap {
+  position: relative;
+  display: flex;
+  width: 25%;
+  padding: 0 5px;
+}
+.submitWrap {
+  width: 50%;
+  justify-content: flex-end;
+}
+.input-group-prepend {
+  display: -webkit-box;
+  display: flex;
+  background: #fff;
+}
+.input-group-icon {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  color: #232b38;
+  text-align: center;
+  white-space: nowrap;
+  background-color: transparent;
+}
+.input-group > .custom-select,
+.input-group > .form-control {
+  position: relative;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 25px;
+  font-size: 15px;
+  padding: 6px 10px;
+  margin-bottom: 0;
+  outline: none;
+  border: none;
+}
+.btn-submit {
+  display: inline-block;
+  padding: 10px 35px;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: 0;
+}
